@@ -1,3 +1,4 @@
 Background image on MAIN = https://blog.1password.com/thoughts-on-mental-health/
 Text on Background image = https://www.canstockphoto.com/love-yourself-motivational-message-67711657.html
 W3 Schools resources used as well
+Bunny gif = https://cdn2.scratch.mit.edu/get_image/user/13860469_60x60.png
