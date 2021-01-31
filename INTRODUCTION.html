@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Introduction</title>
+<title>Purpose</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
 
-.bg {
-  /*The background image */
-  background-image: url("Media/bg.png");
-
-  /*Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #673AB7;
-  color: white;
-  text-align: center;
-  font-size: 15px;
-}
-</style>
-<body>
 <!-- Navigation (Stays on Top) -->
 <div class="w3-top w3-bar w3-deep-purple">
   <a href="MAIN.html" class="w3-bar-item w3-button">Home</a>
-  <a href="INTRODUCTION.html" class="w3-bar-item w3-button">Introduction/Purpose</a>
-  <a href="TOTD.html" class="w3-bar-item w3-button">Tip of the Day</a>
-  <a href="WH.html" class="w3-bar-item w3-button">WellnessHacks</a>
+  <a href="INTRODUCTION.html" class="w3-bar-item w3-button">Purpose</a>
+  <a href="WH.html" class="w3-bar-item w3-button">Wellness Hacks</a>
   <a href="RESOURCES.html" class="w3-bar-item w3-button">Resources</a>
   <a href="SOCIALS.html" class="w3-bar-item w3-button">Socials</a>
 </div>
 
-<!-- background -->
-<div class="bg">
-  <div class="w3-container w3-large ">
-  <div class="w3-left-align">
-  <pre style = "font-family:Garamond, serif;font-size:24px;color:DarkSlateGray;padding-top:40px">
-  Hello! We're a team of 4 that made this website for a hackathon; specifically HackViolet.
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="media/purple_river.jpg"
+  style="width:100%;">
+  <img class="mySlides" src="media/purple_camp.jpg"
+  style="width:100%">
+  <img class="mySlides" src="media/purple_stars.jpg"
+  style="width:100%">
+</section>
 
-  We developed this website because we felt there was a need to remind people all around
-  the world that they matter. The pandemic has surely made everything worse for people,
-  but we hope that your days continue to shine and your smile still shows. Self-care!
-  </pre>
-  <img src="Media/bunny-cute.gif" class="w3-round" alt="Chick" style="margin: -50px 0px 0px 60px;">
-  <img src="Media/fab.png" class="w3-round" alt="Fab" style="margin: -235px 0px 0px -70px;">
-  <img src="Media/carlton.gif" class="w3-opacity" alt="Carlton" style="margin: -300px 0px 0px 295px">
+<div class="w3-sand w3-grayscale-min w3-large">
+
+<!-- Our Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide" style="font-family:Garamond, serif; font-size: 48px; color:DarkSlateGray;">Purpose Statement</h2>
+  <div class="w3-panel w3-leftbar w3-khaki">
+    <p style="font-family:Garamond, serif; font-size: 24px; color:DarkSlateGray;"><i>“"The most powerful relationship you will ever have is the relationship with yourself."</i></p>
+    <p style="font-family:Garamond, serif; color:DarkSlateGray;">Diane Von Furstenberg</p>
+  </div>
+  <p class="w3-justify" style="font-family:Garamond, serif; font-size: 24px; color:DarkSlateGray;">Hello, we're a team of 4 that made this website for a hackathon; specifically HackViolet.
+
+  We developed this website because we felt there was a need to remind people all around the world that they matter. The pandemic has surely made everything worse for people, but we hope that your days continue to shine and your smile still shows. Self-care!</p>
+</section>
 </div>
-
-<!-- Start Content -->
-<div id="home" class="w3-content">
-
 <!-- Footer -->
-<div class="footer">
+<footer class="w3-container w3-padding-32 w3-center w3-deep-purple w3-xlarge">
+ <a href="https://twitter.com/kanerusoju"><i class="fa fa-twitter w3-hover-text-green"></i></a>
  <p>
- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+ <p class="w3-medium">
+ Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
  </p>
+ <p class="w3-medium">
+ Developed and Designed by <a href="https://linktr.ee/kaneru" target="_blank" class="w3-hover-text-green">Daniel Klemens</a></p>
+</footer>
 
-<!-- End Content -->
-</div>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000);
+}
+</script>
+
 </body>
 </html>

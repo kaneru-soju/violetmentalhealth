@@ -1,6 +1,9 @@
 Background image on MAIN = https://blog.1password.com/thoughts-on-mental-health/
 Text on Background image = https://www.canstockphoto.com/love-yourself-motivational-message-67711657.html
 W3 Schools resources used as well
-Bunny gif = https://cdn2.scratch.mit.edu/get_image/user/13860469_60x60.png
 carlton gif = https://media.giphy.com/media/FFoyx4VHgukEg/giphy.gif
 advice slip api for tip of the day page
+purple_river = https://hdqwalls.com/download/beautiful-purple-weather-landscape-of-lake-matheson-7w-1920x1080.jpg
+purple_camp = https://www.designbolts.com/wp-content/uploads/2018/01/Purple-Sky-Laptop-HD-WallPaper-1920-x-1080-px-1.jpg
+purple_stars = https://hdqwalls.com/download/purple-night-sky-5k-65-1920x1080.jpg
+SW_Resources = reddit.com/r/SuicideWatch/wiki/hotlines

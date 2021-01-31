@@ -1,64 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>WellnessHacks</title>
+<title>Hacks</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  /*The background image */
-  background-image: url("Media/bg.png");
-
-  /*Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #673AB7;
-  color: white;
-  text-align: center;
+.menu {
+  display: none;
 }
 </style>
+
 <body>
 <!-- Navigation (Stays on Top) -->
 <div class="w3-top w3-bar w3-deep-purple">
   <a href="MAIN.html" class="w3-bar-item w3-button">Home</a>
-  <a href="INTRODUCTION.html" class="w3-bar-item w3-button">Introduction/Purpose</a>
-  <a href="TOTD.html" class="w3-bar-item w3-button">Tip of the Day</a>
-  <a href="WH.html" class="w3-bar-item w3-button">WellnessHacks</a>
+  <a href="INTRODUCTION.html" class="w3-bar-item w3-button">Purpose</a>
+  <a href="WH.html" class="w3-bar-item w3-button">Wellness Hacks</a>
   <a href="RESOURCES.html" class="w3-bar-item w3-button">Resources</a>
   <a href="SOCIALS.html" class="w3-bar-item w3-button">Socials</a>
 </div>
 
-<!-- background -->
-<div class="bg"></div>
+<div class="w3-sand w3-grayscale-min w3-large">
 
-<!-- Start Content -->
-<div id="home" class="w3-content">
+<!-- Routine Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
 
-<!-- Footer -->
-<div class="footer">
- <p>
- Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
- </p>
+    <h5 class="w3-center w3-padding-48"><span class="w3-card w3-padding w3-wide">THE ROUTINE</span></h5>
 
-<!-- End Content -->
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drink');">
+        <div class="w3-col s6 tablink" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Drink</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Go Outside');">
+        <div class="w3-col s6 tablink" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Go Outside</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Self Love');">
+        <div class="w3-col s6 tablink" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Talk</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Vegetables</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">It's always a good idea to eat some veggies with any meal!</p><br>
+
+      <h5>Fruits</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Fruit is easy on the go... just grab a banana or an apple with a napkin.</p><br>
+
+      <h5>Tree Nuts</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Perfect late night snack!</p><br>
+
+      <h5>Meal Prep</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Meal prep saves a lot of time and ensures that your future self will pat you on the back.</p><br>
+    </div>
+
+    <div id="Drink" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Water</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Try to get your daily 2 liters.</p><br>
+
+      <h5>Tea</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Waking up in the morning with a clear throat is wonderful. 4.50</p><br>
+
+      <h5>Smoothies</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">A refreshing and healthy way to start the day.</p><br>
+
+      <h5>Fruit Juice</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Good with a nice breakfast, if you want to switch it up.</p><br>
+    </div>
+
+    <div id="Go Outside" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Physical Activity</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">60 minutes of exercise will make you feel reborn!</p><br>
+
+      <h5>Stretch</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Stretching keeps the soreness and pain away.</p><br>
+
+      <h5>The Outside World</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Getting a breath of fresh air might be just what you need.</p><br>
+
+      <h5>Walking</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Start aiming for 8000 steps, walking goes a long way.</p><br>
+    </div>
+
+    <div id="Self Love" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Sleep Habits</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Start getting into a routine for sleep so that your body can be well rested.</p><br>
+
+      <h5>No Bottles</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Communicate your feelings and don't bottle them up.</p><br>
+
+      <h5>Patience</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Talk to yourself if you need to, sort your thoughts out.</p><br>
+
+      <h5>Relationships</h5>
+      <p class="w3-text-grey" style="font-family:Garamond, serif; font-size: 22px; color:DarkSlateGray;">Message your friends, they miss you!</p><br>
+    </div>
+  </div>
 </div>
+
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-deep-purple w3-xlarge">
+ <a href="https://twitter.com/kanerusoju"><i class="fa fa-twitter w3-hover-text-green"></i></a>
+ <p>
+ <p class="w3-medium">
+ Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a>
+ </p>
+ <p class="w3-medium">
+ Developed and Designed by <a href="https://linktr.ee/kaneru" target="_blank" class="w3-hover-text-green">Daniel Klemens</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
 
 </body>
 </html>
